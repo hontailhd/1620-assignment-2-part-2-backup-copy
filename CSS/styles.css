@@ -50,9 +50,15 @@
     grid-template-columns: 50px 700px 1fr;
     grid-template-rows: 50px 300px 1fr;
     grid-template-areas: 
-        '. . .'
+        '. theme .'
         'input-button input .'
         '. confirm .';
+}
+
+.theme {
+    grid-area: theme;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .input-button {
