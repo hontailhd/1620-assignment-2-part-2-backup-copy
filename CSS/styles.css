@@ -5,9 +5,23 @@
     padding: 0;;
     font-size: 1rem;
     font-family: Lato;
-    color: #1f1d2e;
+    color: var(--font-color);
 }
 
+.lightTheme {
+    --color-primary: #faf4ed;
+    --color-secondary: #fffaf3;
+    --color-accent: #f2e9de;
+    --font-color: #232136;
+
+ }
+ 
+ .darkTheme {
+    --color-primary: #575279;
+    --color-secondary: #6e6a86;
+    --color-accent: #907aa9;
+    --font-color: #fffaf3;
+ }
 
 .container {
     display: grid;
