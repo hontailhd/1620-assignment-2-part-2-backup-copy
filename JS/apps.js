@@ -18,13 +18,54 @@ function themeChange() {
  
 /* function to add a new note */
     /* create button */
-    function newNote() {
-        document.querySelector(".example").style.backgroundColor = "red";
+    function newNoe() {
+        let t = document.querySelector(".input");
+        let newDiv = document.createElement("div");
+        let content = document.createTextNode("bruh")
+        newDiv.appendChild(content)
+        let currentDiv = document.getElementsByClassName("input")
+        document.body.insertBefore(newDiv, currentDiv);
+
         
     }
+    
+    function newote() {
+        let newNote = document.createElement("TEXTAREA");
+        newNote.classList.add("textarea");
+        let save = document.createElement("BUTTON");
+        save.classList.add("save-cancel-button");
+        let cancel = document.createElement("BUTTON");
+        cancel.classList.add("save-cancel-button")
+        
+      }
+
+    function newNote() {
+            let newNote = document.querySelector(".input")
+            newNote.insertAdjacentHTML("beforeend", `<div class="input">
+            <textarea class="textarea" id="notebox" name="notebox" rows="11" cols="76">
+            Enter note here.
+            </textarea>
+  
+            <ul>
+            <li class="row">
+                  <button class="save-cancel-button">
+                    Delete
+                  </button>                    
+            </li>                    
+            <li class="row">
+                <button class="save-cancel-button">
+                Save
+                </button>
+            </li>
+            </ul>        
+            </div>`);
+          
+      }
         /* Creates a note-taking area*/
             /* Can be a textarea or div */
 
+
+    
         /* Creates a save button*/
             /* saves note in note taking area when clicked*/
 
