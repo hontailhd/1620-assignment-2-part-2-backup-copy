@@ -2,7 +2,39 @@
 
 
 /* function a*/
-/* function for theme changes */
+/* function(s) for theme changes */
+/* set the inital theme to light mode */
+function setTheme() {
+    var element = document.body;
+    element.classList.toggle("light-mode");
+} 
+
+/* function for changing between themes (dark/light) */
+
+/*function themeChange() {
+    if (localStorage.getItem('theme') === 'darkTheme') {
+        setTheme('lightTheme');
+    } else {
+        setTheme('darkTheme');
+    }
+} */
+
+function themeChange() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+} 
+
+/* sets inital theme */
+/*(function () {
+    if (localStorage.getItem('theme') === 'darkTheme') {
+        setTheme('lightTheme');
+    } else {
+        setTheme('darkTheme');
+    }
+}); */
+
+
+
     /*Adds a dark button for your app */
         
         /* Changes the mode of the app to dark/light */

@@ -8,16 +8,16 @@
     color: var(--font-color);
 }
 
-.lightTheme {
-    --color-primary: #faf4ed;
+.light-mode {
+    --color-primary: #e0def4;
     --color-secondary: #fffaf3;
     --color-accent: #f2e9de;
-    --color-textbox: #e0def4;
+    --color-textbox: #faf4ed;
     --font-color: #232136;
 
  }
  
- .darkTheme {
+ .dark-mode {
     --color-primary: #575279;
     --color-secondary: #6e6a86;
     --color-accent: #907aa9;
@@ -130,7 +130,7 @@ footer {
 }
 
 .inline {
-    background-color: #9893a5;
+    background-color: var(--color-accent);
     display: block;
     margin: 0;
     padding: 2rem;
