@@ -84,7 +84,7 @@
     ;
 }
 
-textarea {
+.textarea {
     padding: 10px;
     border: none;
     background-color: var(--color-textbox);
@@ -96,7 +96,7 @@ textarea {
     text-align: left;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 1rem 1fr;
+    grid-template-rows: 75px 1fr;
     grid-template-areas: 
         'a'
         'b';
@@ -106,7 +106,6 @@ textarea {
     grid-area: a;
     display: flex;
     flex-direction: row-reverse;
-    
     align-items: center;
 }
 
@@ -123,7 +122,14 @@ textarea {
     background: none;
     font-size: 1rem;
   }
-
+  
+.sidebar-button {
+    display: flex;
+    border: none;
+    padding: 1rem;
+    background: none;
+    font-size: 1rem;
+  }
 
 footer {
     grid-area: f;

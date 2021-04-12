@@ -17,28 +17,7 @@ function themeChange() {
 
  
 /* function to add a new note */
-    /* create button */
-    function newNoe() {
-        let t = document.querySelector(".input");
-        let newDiv = document.createElement("div");
-        let content = document.createTextNode("bruh")
-        newDiv.appendChild(content)
-        let currentDiv = document.getElementsByClassName("input")
-        document.body.insertBefore(newDiv, currentDiv);
-
-        
-    }
-    
-    function newote() {
-        let newNote = document.createElement("TEXTAREA");
-        newNote.classList.add("textarea");
-        let save = document.createElement("BUTTON");
-        save.classList.add("save-cancel-button");
-        let cancel = document.createElement("BUTTON");
-        cancel.classList.add("save-cancel-button")
-        
-      }
-
+    /* creates teaxtarea and buttons */
     function newNote() {
             let newNote = document.querySelector(".input")
             newNote.insertAdjacentHTML("beforeend", `<div class="input">
@@ -61,11 +40,39 @@ function themeChange() {
             </div>`);
           
       }
-        /* Creates a note-taking area*/
-            /* Can be a textarea or div */
 
 
+/*selects body from the key given and shows it to user */
+function openNote(btn) {
+
+}
+
+var noteArray = []
+var titleArray = []
+
+function save() {
+    let savedNote = document.getElementById("notebox").value;
+    let title = window.prompt("Enter note title: ");
+    noteArray[title] = savedNote;
+    let noteLink = document.createElement("BUTTON");
+    noteLink.innerHTML = title;
+    noteLink.onclick = openNote(noteLink);
+    titleArray.push(noteLink);
+
+    console.log(noteArray);
+    console.log(noteArray.keys());
+    console.log(titleArray);
+    let I = document.createElement("BUTTON");
+    I.innerHTML = title;
+    console.log(title);
     
+}
+
+
+
+
+
+
         /* Creates a save button*/
             /* saves note in note taking area when clicked*/
 
