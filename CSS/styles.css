@@ -47,18 +47,19 @@
     grid-area: m;
     background-color:var(--color-secondary);
     display: grid;
-    grid-template-columns: 50px 700px 1fr;
-    grid-template-rows: 50px 300px 1fr;
+    grid-template-columns: 75px 700px 1fr;
+    grid-template-rows: 75px 300px 1fr;
     grid-template-areas: 
-        '. theme .'
-        'input-button input .'
-        '. confirm .';
+        'input-button . theme'
+        '. input .'
+        '. . .';
 }
+
 
 .theme {
     grid-area: theme;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
 
 .input-button {
@@ -79,7 +80,8 @@
 
 .row { 
     display: inline;
-    float: left;
+    float: right;
+    ;
 }
 
 textarea {
@@ -119,7 +121,7 @@ textarea {
     border: none;
     padding: 1rem;
     background: none;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
 
@@ -150,11 +152,33 @@ footer {
     flex-direction: row;
 }
 
-/* theme button */
+/* button section */
 .themeButton {
-    background-color: var(--color-textbox);
+    background-color: var(--color-primary);
     border-style: solid;
+    border-color: var(--font-color);
     border-width: 2px;
+    padding: 1rem;
+    align-self: center;
+}
+
+.new-note-button {
+    background-color: var(--color-primary);
+    border-style: solid;
+    border-color: var(--font-color);
+    border-width: 2px;
+    padding: 1rem;
+    align-self: center;
+}
+
+.save-cancel-button {
+    background-color: var(--color-primary);
+    border-style: solid;
+    border-color: var(--font-color);
+    border-width: 2px;
+    padding: 0.5rem;
+    margin: 5px;
+    align-self: center;
 }
 
 @media screen and (max-width: 1000px) {
@@ -168,7 +192,7 @@ footer {
     .container {
         display: grid;
         grid-template-columns: 5rem 1fr;
-        grid-template-rows: 5rem 1fr 5rem;
+        grid-template-rows: 5rem 1fr 2rem;
         grid-template-areas: 
             'h h h'
             's m m'
@@ -182,20 +206,26 @@ footer {
         grid-area: m;
         background-color: #6e6a86;
         display: grid;
-        grid-template-columns: 50px 300px 1fr;
-        grid-template-rows: 50px 300px 1fr;
+        grid-template-columns: 75px 300px 1fr;
+        grid-template-rows: 75px 300px 1fr;
         grid-template-areas: 
-            '. . .'
-            'input-button input .'
-            '. confirm .';
+            'input-button theme .'
+            '. input .'
+            '. . .';
+    }
+
+    .theme {
+        grid-area: theme;
+        display: flex;
+        flex-direction: row-reverse;
     }
 
     textarea {
         padding: 10px;
         border: none;
         background-color: #f2e9de;
-        width: 200px;
-        height: 275px;
+        width: 275px;
+        height: 100px;
     }
 
 

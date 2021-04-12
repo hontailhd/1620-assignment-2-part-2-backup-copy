@@ -25,31 +25,32 @@
     
         <div class="main">
             <div class="input-button">
-                <button class="no-style-button">
-                + 
+                <button class="new-note-button" onclick="newNote()">
+                    <p>New note</p>
                 </button>
             </div>
-            <div class="input">
-                <textarea id="notebox" name="notebox" rows="13" cols="76">
-                    Enter note here.
-                </textarea>
-            </div>
             
-            <div class="confirmation">
+            
+            <div class="input">
+                <textarea id="notebox" name="notebox" rows="11" cols="76">
+                Enter note here.
+                </textarea>
+        
                 <ul>
                     <li class="row">
-                        <button class="no-style-button">
-                            Save
-                        </button>
-                    </li>
-                    <li class="row">
-                        <button class="no-style-button">
+                        <button class="save-cancel-button">
                             Delete
                         </button>                    
+                    </li>                    
+                    <li class="row">
+                        <button class="save-cancel-button">
+                        Save
+                        </button>
                     </li>
                 </ul>        
             </div>
-
+            
+            
             <div class="theme">
                 <button class="themeButton" type="button"  onclick="themeChange()">Switch theme</button>
             </div>

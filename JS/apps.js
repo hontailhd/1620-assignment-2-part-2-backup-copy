@@ -1,7 +1,7 @@
 
 
 
-/* function a*/
+
 /* function(s) for theme changes */
 /* set the inital theme to light mode */
 function setTheme() {
@@ -10,40 +10,18 @@ function setTheme() {
 } 
 
 /* function for changing between themes (dark/light) */
-
-/*function themeChange() {
-    if (localStorage.getItem('theme') === 'darkTheme') {
-        setTheme('lightTheme');
-    } else {
-        setTheme('darkTheme');
-    }
-} */
-
 function themeChange() {
     var element = document.body;
     element.classList.toggle("dark-mode");
 } 
 
-/* sets inital theme */
-/*(function () {
-    if (localStorage.getItem('theme') === 'darkTheme') {
-        setTheme('lightTheme');
-    } else {
-        setTheme('darkTheme');
-    }
-}); */
-
-
-
-    /*Adds a dark button for your app */
-        
-        /* Changes the mode of the app to dark/light */
-        
-        /* button will change to notify user the dark/light theme is reversable */
-
-/* function b*/    
+ 
 /* function to add a new note */
     /* create button */
+    function newNote() {
+        document.querySelector(".example").style.backgroundColor = "red";
+        
+    }
         /* Creates a note-taking area*/
             /* Can be a textarea or div */
 
@@ -71,6 +49,8 @@ function themeChange() {
             /* Removes save button*/
 
             /* Removes cancel button */
+
+
 
 /* function askNoteTitle */     
 /* function to ask user for note-title */
